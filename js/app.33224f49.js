@@ -179,7 +179,7 @@
                                 },
                                 attrs: {
                                   target: "_blank",
-                                  href: "CV_Yicheng_Gao.pdf"
+                                  href: "CV_yichengGao_20240911.pdf"
                                 }
                               },
                               [t._v("CV")])], 1)], 1)], 1), e("b-container", {
@@ -216,7 +216,7 @@
                               },
                               [e("b-card-body", [e("b-avatar", {
                                 attrs: {
-                                  src: "photo_gyc.jpg",
+                                  src: "lifephoto.jpg",
                                   size: "60%"
                                 }
                               })], 1), e("b-card-body", {
@@ -412,7 +412,14 @@
                                       [e("u", [t._v("BM2 Lab") ])]),  
                                       t._v(". He obtained his Bachelor degree from Huazhong Agricultural University (HZAU) in 2020 with Outstanding Graduate Award, with major in Bioinformatics.")]), 
 																			e("p", [t._v("His main research interests are "), e("b", [t._v("Bioinformatics")]), t._v(", "), 
-                                      e("b", [t._v("Computational Biology")]), t._v(", "), e("b", [t._v("Artificial Intelligence")]), t._v(" and "), e("b", [t._v("Machine Learning")]), t._v(".")])])], 1)], 1), 
+                                      e("b", [t._v("Computational Biology")]), t._v(", "), e("b", [t._v("Artificial Intelligence")]), t._v(" and "), e("b", [t._v("Machine Learning")]), t._v(".")]),
+                                      e("p",[t._v("Specifically, his main research directions are:")]), 
+                                      e("b",[t._v("1. Single-cell perturbation prediction")]),
+                                      e("p",[t._v("")]),
+                                      e("b",[t._v("2. Multi-modal integration")]), 
+                                      e("p",[t._v("")]),
+                                      e("b",[t._v("3. TCR-epitope binding modeling")]), 
+                                    ])], 1)], 1), 
 																			
 																		// e("b-row", {
                       //   attrs: {
@@ -477,7 +484,7 @@
                                   background: "white"
                                 }
                               },
-                              [t._v(" Publications ")]) : t._e(), t._l(t.publication_years, (function(a) {
+                              [t._v(" Main Publications ")]) : t._e(), t._l(t.publication_years, (function(a) {
                             return e("b-card", {
                                   key: "pubs_" + a,
                                   staticStyle: {
@@ -555,16 +562,20 @@
                                       },
                                       [e("b-row", 
                                       [e("b-col", {attrs: {cols: "3"}},
+                                        [t._v("2023")]),  e("b-col", {attrs: {cols: "9"}},
+                                        [e("p", [t._v("National scholarship for PhD students in China (Top 0.2%)")])]),
+
+                                        e("b-col", {attrs: {cols: "3"}},
                                           [t._v("2020")]),  e("b-col", {attrs: {cols: "9"}},
-                                          [e("p", [t._v("Tongji University Scholarship for Outstanding Ph.D. Freshman")])]), 
+                                          [e("p", [t._v("Tongji University Scholarship for Outstanding Ph.D. Freshman (Top 5%)")])]), 
 
                                         e("b-col", {attrs: {cols: "3"}}, 
                                         [t._v("2020")]),e("b-col", {attrs: {cols: "9"}},
-                                        [e("p", [t._v("Huazhong Agricultural University 2020 Outstanding Graduates")])]), 
+                                        [e("p", [t._v("Huazhong Agricultural University 2020 Outstanding Graduates (Top 5%)")])]), 
 
                                         e("b-col", {attrs: {cols: "3"}}, 
                                         [t._v("2020")]),e("b-col", {attrs: {cols: "9"}},
-                                        [e("p", [t._v("The 16th 'Top Ten Students' of Huazhong Agricultural University, ranked first")])]),
+                                        [e("p", [t._v("The 16th 'Top Ten Students' of Huazhong Agricultural University (Top 0.1%), ranked first")])]),
 
                                         e("b-col", {attrs: {cols: "3"}}, 
                                         [t._v("2019")]),e("b-col", {attrs: {cols: "9"}},
@@ -577,10 +588,6 @@
                                         e("b-col", {attrs: {cols: "3"}}, 
                                         [t._v("2018")]),e("b-col", {attrs: {cols: "9"}},
                                         [e("p", [t._v("China SAS Data Analysis Competition, the twelfth place in Hubei Province")])]),
-
-                                        e("b-col", {attrs: {cols: "3"}}, 
-                                        [t._v("2018")]),e("b-col", {attrs: {cols: "9"}},
-                                        [e("p", [t._v("Hubei Province 'Internet +' College Students Innovation and Entrepreneurship Competition, Best Design Award")])]),
 
 
                                         ],1)],1)], 1)], 1)], 1)], 1),  e("b-row", {
@@ -624,12 +631,20 @@
                                           border: "0px"
                                         }
                                       },
-                                      [e("b-row", [e("b-col", {attrs: {cols: "3"}},[t._v("2020.07-2020.09")]), 
-                                      e("b-col", {attrs: {cols: "9"}},[e("p", {staticStyle: {margin: "0"}},
-                                        [t._v("Summer Intern, Algorithm Engineer")]), e("p", [t._v("BGI Genomics, Shenzhen, Guangdong, China")])]),
+                                      [e("b-row", [e("b-col", {attrs: {cols: "3"}},[t._v("2023.12-Present")]), 
+                                      e("b-col", {attrs: {cols: "6"}},[e("p", {staticStyle: {margin: "0"}},
+                                        [t._v("Intern, AI/ML group")]), e("p", [t._v("Microsoft Research Asia, Shanghai, China")])]), 
+                                        e("b-col", {attrs: {cols: "3"}},[e("img",{attrs:{src:"./logos/Microsoft.png",alt:"Logo", width:"150"}})]),     
+
+                                        e("b-col", {attrs: {cols: "3"}},[t._v("2020.07-2020.09")]), 
+                                      e("b-col", {attrs: {cols: "6"}},[e("p", {staticStyle: {margin: "0"}},
+                                        [t._v("Summer Intern, Algorithm Engineer")]), e("p", [t._v("BGI Genomics, Shenzhen, Guangdong, China")])]), 
+                                        e("b-col", {attrs: {cols: "3"}},[e("img",{attrs:{src:"./logos/BGI.jpg",alt:"Logo", width:"150"}})]),
+
                                         e("b-col", {attrs: {cols: "3"}},[t._v("2019.07-2019.09")]), 
-                                      e("b-col", {attrs: {cols: "9"}},[e("p", {staticStyle: {margin: "0"}},
-                                        [t._v("Summer Intern, Algorithm Engineer")]), e("p", [t._v("BGI Genomics, Shenzhen, Guangdong, China")])])
+                                      e("b-col", {attrs: {cols: "6"}},[e("p", {staticStyle: {margin: "0"}},
+                                        [t._v("Summer Intern, Algorithm Engineer")]), e("p", [t._v("BGI Genomics, Shenzhen, Guangdong, China")])]), 
+                                        e("b-col", {attrs: {cols: "3"}},[e("img",{attrs:{src:"./logos/BGI.jpg",alt:"Logo", width:"150"}})]),
                                             ], 
                                             1)], 1)], 1)], 1)], 1)], 1), 
                       //                       e("b-row", {
