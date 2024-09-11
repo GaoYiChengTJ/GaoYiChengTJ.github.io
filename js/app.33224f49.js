@@ -421,44 +421,62 @@
                                       e("b",[t._v("3. TCR-epitope binding modeling")]), 
                                     ])], 1)], 1), 
 																			
-																		// e("b-row", {
-                      //   attrs: {
-                      //     id: "news"
-                      //   }
-                      // },
-                      // [e("b-card", {
-                      //       staticStyle: {
-                      //         width: "100%",
-                      //         border: "0px",
-                      //         padding: "1vw 0 0 0"
-                      //       },
-                      //       attrs: {
-                      //         "no-body": ""
-                      //       }
-                      //     },
-                      //     [e("b-card-header", {
-                      //           staticStyle: {
-                      //             "font-size": "22px",
-                      //             "text-align": "left",
-                      //             "font-weight": "bold",
-                      //             border: "0px",
-                      //             background: "white"
-                      //           }
-                      //         },
-                      //         [t._v(" News ")]), e("b-card-body", {
-                      //           staticStyle: {
-                      //             border: "0px",
-                      //             padding: "5px 5px 5px 5vw"
-                      //           }
-                      //         },
-                      //         [t.news ? e("b-list-group", t._l(t.news, (function(t, a) {
-                      //           return e("news", {
-                      //             key: "news_" + a,
-                      //             attrs: {
-                      //               data: t
-                      //             }
-                      //           })
-                      //         })), 1) : t._e()], 1)], 1)], 1), 
+																		e("b-row", {
+                        attrs: {
+                          id: "news"
+                        }
+                      },
+                      [e("b-card", {
+                            staticStyle: {
+                              width: "100%",
+                              border: "0px",
+                              padding: "1vw 0 0 0"
+                            },
+                            attrs: {
+                              "no-body": ""
+                            }
+                          },
+                          [e("b-card-header", {
+                                staticStyle: {
+                                  "font-size": "22px",
+                                  "text-align": "left",
+                                  "font-weight": "bold",
+                                  border: "0px",
+                                  background: "white"
+                                }
+                              },
+                              [t._v(" News ")]), e("b-card-body", {
+                                staticStyle: {
+                                  border: "0px",
+                                  padding: "5px 5px 5px 5vw", 
+                                  height: "200px", 
+                                  background: "white",
+                                  "overflow-y": "auto", 
+                                  "text-align": "left"
+                                }
+                              },
+                              [t.news ? e("b-list-group", 
+                                t._l(t.news, (function(t, a) {
+                                return e("news", {
+                                  key: "news_" + a, 
+                                  // staticClass: "news-item"
+                                  attrs: {
+                                    data: t
+                                  }
+                                })
+                                })), 1) : t._e(), 
+                              e("p", [t._v("• [Sep 2024] One article accept by Nucleic Acid Research!")]), 
+                              e("p", [t._v("• [Aug 2024] One article accept by Nature Computational Science!")]), 
+                              e("p", [t._v("• [Aug 2024] One letter accept by Nature Computational Science!")]), 
+                              e("p", [t._v("• [May 2024] One article in Cell Genomics was annonated as a Featured Article!")]),
+                              e("p", [t._v("• [Apr 2024] One article accept by Cell Genomics!")]), 
+                              e("p", [t._v("• [Jan 2024] One article in Nature Machine Intelligence was selected as ESI highly cited")]),
+                              e("p", [t._v("• [Dec 2023] Join Microsoft Research Asia as an intern.")]), 
+                              e("p", [t._v("• [Sep 2023] One letter accept by Nature Machine Intelligence.")]), 
+                              e("p", [t._v("• [Mar 2023] One article in Nature Machine Intelligence was highlighted!")]),
+                              e("p", [t._v("• [Jan 2023] One article accept by Nature Machine Intelligence!")]), 
+                              e("p", [t._v("• [Sep 2020] Join BM2 labs at Tongji University!")]),
+                            ], 1)], 1)], 1), 
 															
 												e("b-row", {
                         attrs: {
