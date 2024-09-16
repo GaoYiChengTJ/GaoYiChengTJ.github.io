@@ -1,0 +1,62 @@
+{
+    "data":{
+		"2024": [
+			{
+                "title": "PerturBase: a comprehensive database for single-cell perturbation data analysis and visualization",
+                "booktitle": "Nucleic Acids Research",
+                "authors": "Zhiting Wei*, Duanmiao Si*, Bin Duan*,<b>Yicheng Gao*</b>, Qian Yu, Ling Guo, Qi Liu"
+            },
+			{
+                "title": "Toward subtask decomposition-based learning and benchmarking for genetic perturbation outcome prediction and beyond",
+                "booktitle": "Nature Computational Science",
+                "authors": "<b>Yicheng Gao*</b>, Zhiting Wei*, Kejing Dong*, Ke Chen*, Jingya Yang, Guohui Chuai, Qi Liu"
+            },
+            {
+                "title": "Delineating the cell types with transcriptional kinetics",
+                "booktitle": "Nature Computational Science",
+                "authors": "<b>Yicheng Gao</b>, Qi Liu"
+            },
+            {
+                "title": "Unified cross-modality integration and analysis of T cell receptors and T cell transcriptomes by low-resource-aware representation learning",
+                "booktitle": "Cell Genomics",
+                "authors": "<b>Yicheng Gao*</b>, Kejing Dong*, Yuli Gao, Xuan Jin, Jingya Yang, Gang Yan, Qi Liu"
+            }
+				],
+        "2023": [
+            {
+                "title": "Neo-epitope identification by weakly-supervised peptide-TCR binding prediction",
+                "booktitle": "Biorxiv",
+                "authors": "Yuli Gao*, <b>Yicheng Gao*</b>, Wannian Li, Siqi Wu, Feiyang Xing, Chi Zhou, Shaliu Fu, Guohui Chuai, Qinchang Chen, He Zhang, Qi Liu"
+            },
+            {
+                "title": "Reply to: The pitfalls of negative data bias for the T-cell epitope specificity challenge",
+                "booktitle": "Nature Machine Intelligence",
+                "authors": "<b>Yicheng Gao*</b>, Yuli Gao*, Kejing Dong, Siqi Wu, Qi Liu"
+            },
+            {
+                "title": "Pan-Peptide Meta Learning for T-cell receptor–antigen binding recognition",
+                "booktitle": "Nature Machine Intelligence",
+                "authors": "<b>Yicheng Gao*</b>, Yuli Gao*, Yuxiao Fan, Chengyu Zhu, Zhiting Wei, Chi Zhou, Guohui Chuai, Qinchang Chen, He Zhang, Qi Liu"
+            },
+            {
+                "title": "Privacy-preserving integration of multiple institutional data for single-cell type identification with scPrivacy",
+                "booktitle": "Science China Life Sciences",
+                "authors": "Shaoqi Chen, Bin Duan, Chenyu Zhu, Chen Tang, Shuguang Wang, <b>Yicheng Gao</b>, Shaliu Fu, Lixin Fan, Qiang Yang, Qi Liu"                
+            }
+				],
+        "2021": [
+            {
+                "title": "Integrating multiple references for single-cell assignment",
+                "booktitle": "Nucleic Acids Research",
+                "authors": "Bin Duan, Shaoqi Chen, Xiaohan Chen, Chenyu Zhu, Chen Tang, Shuguang Wang, <b>Yicheng Gao</b>, Shaliu Fu, Qi Liu"
+            }
+                ],
+        "2019": [
+            {
+                "title": "An ensemble strategy to predict prognosis in ovarian cancer based on gene modules",
+                "booktitle": "Frontiers in Genetics",
+                "authors": "<b>Yicheng Gao</b>, Xionghui Zhou, Wen Zhang"
+            }
+                ]	
+    }
+}
