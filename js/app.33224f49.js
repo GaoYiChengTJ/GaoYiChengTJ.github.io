@@ -157,7 +157,18 @@
                               font: "22px Avenir, Helvetica, Arial, sans-serif"
                             }
                           },
-                          [e("b-nav-item", {
+                          [
+                            e("b-nav-item", {
+                              staticStyle: {
+                                color: "white"
+                              },
+                              attrs: {
+                                // target: "_blank",
+                                href: "./index.html"
+                              }
+                            },
+                              [t._v("Home")]),
+                            e("b-nav-item", {
                                 staticStyle: {
                                   color: "white"
                                 },
@@ -165,15 +176,28 @@
                                   href: "#publications"
                                 }
                               },
-                              [t._v("Research")]), e("b-nav-item", {
+                              [t._v("Research")]), 
+                              
+                              e("b-nav-item", {
                                 staticStyle: {
                                   color: "white"
                                 },
                                 attrs: {
                                   href: "#experience"
                                 }
+                              }, 
+                              [t._v("Experience")]), 
+                              e("b-nav-item", {
+                                staticStyle: {
+                                  color: "white"
+                                },
+                                attrs: {
+                                  // target: "_blank",
+                                  href: "./publication.html"
+                                }
                               },
-                              [t._v("Experience")]), e("b-nav-item", {
+                                [t._v("Publications")]),
+                              e("b-nav-item", {
                                 staticStyle: {
                                   color: "white"
                                 },
@@ -502,7 +526,7 @@
                                   background: "white"
                                 }
                               },
-                              [t._v(" Main Publications ")]) : t._e(), t._l(t.publication_years, (function(a) {
+                              [t._v(" Main Publications")]) : t._e(), t._l(t.publication_years, (function(a) {
                             return e("b-card", {
                                   key: "pubs_" + a,
                                   staticStyle: {
