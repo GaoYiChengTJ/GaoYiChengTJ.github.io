@@ -15,6 +15,11 @@
                 "title": "Delineating the cell types with transcriptional kinetics",
                 "booktitle": "Nature Computational Science",
                 "authors": "<b>Yicheng Gao</b>, Qi Liu"
+            }, 
+            {
+                "title": "Foundation models in molecular biology",
+                "booktitle": "Biophysics Reports",
+                "authors": "Yunda Si, Jiawei Zou, <b>Yicheng Gao</b>, Guohui Chuai, Qi Liu"
             },
             {
                 "title": "Unified cross-modality integration and analysis of T cell receptors and T cell transcriptomes by low-resource-aware representation learning",
