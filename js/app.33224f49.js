@@ -413,9 +413,9 @@
                                   },
                                   [e("b", [t._v("Yicheng Gao")]), t._v(" (高溢骋) is currently a PhD candidate in Bioinformatics Department at Tongji University (TJU), supervised by "), 
                                   e("a", {
-                                        staticStyle: {
-                                          color: "black"
-                                        },
+                                        // staticStyle: {
+                                        //   color: "black"
+                                        // },
                                         attrs: {
                                           href: "http://life.tongji.edu.cn/03/28/c12618a131880/page.htm",
                                           target: "_blank"
@@ -425,11 +425,11 @@
                                       t._v(" in ")
                                       ,
                                       e("a", {
-                                        staticStyle: {
-                                          color: "black"
-                                        },
+                                        // staticStyle: {
+                                        //   color: "black"
+                                        // },
                                         attrs: {
-                                          href: "http://bm2.tongji.edu.cn/",
+                                          href: "https://ai4omics.github.io/",
                                           target: "_blank"
                                         }
                                       },
@@ -673,9 +673,19 @@
                                           border: "0px"
                                         }
                                       },
-                                      [e("b-row", [e("b-col", {attrs: {cols: "3"}},[t._v("2023.12-Present")]), 
+                                      [e("b-row", [e("b-col", {attrs: {cols: "3"}},[t._v("2023.12-2024.10")]), 
                                       e("b-col", {attrs: {cols: "6"}},[e("p", {staticStyle: {margin: "0"}},
-                                        [t._v("Intern, AI/ML group")]), e("p", [t._v("Microsoft Research Asia, Shanghai, China")])]), 
+                                        [t._v("Intern, AI/ML group")]), 
+                                        
+                                        t._v("Mentored by "),
+                                        e("a",{attrs:{href: "https://www.microsoft.com/en-us/research/people/caihuashan/",
+                                        target: "_blank"}}, [e("u",[t._v("Dr. Caihua Shan")])]), 
+                                        t._v(" and "), 
+                                        e("a",{attrs:{href: "http://recmind.cn/",
+                                        target: "_blank"}}, [e("u",[t._v("Dr. Dongsheng Li")])]),
+
+                                        e("p", [t._v("Microsoft Research Asia, Shanghai, China")])]), 
+
                                         e("b-col", {attrs: {cols: "3"}},[e("img",{attrs:{src:"./logos/Microsoft.png",alt:"Logo", width:"150"}})]),     
 
                                         e("b-col", {attrs: {cols: "3"}},[t._v("2020.07-2020.09")]), 
