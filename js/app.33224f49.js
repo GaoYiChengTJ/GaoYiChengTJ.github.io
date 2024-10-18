@@ -489,6 +489,7 @@
                                   }
                                 })
                                 })), 1) : t._e(), 
+                                e("p", [t._v("• [Otc 2024] Our one article in Nature Computational Science was highlighted!")]),
                                 e("p", [t._v("• [Otc 2024] Awarded the \"Stars of Tomorrow\" in MSR!")]), 
                                 e("p", [t._v("• [Sep 2024] Our work accepted by Nucleic Acid Research!")]), 
                               e("p", [t._v("• [Aug 2024] Our work accepted by Nature Computational Science!")]), 
