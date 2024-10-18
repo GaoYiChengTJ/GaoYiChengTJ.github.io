@@ -489,7 +489,8 @@
                                   }
                                 })
                                 })), 1) : t._e(), 
-                              e("p", [t._v("• [Sep 2024] Our work accepted by Nucleic Acid Research!")]), 
+                                e("p", [t._v("• [Otc 2024] Awarded the \"Stars of Tomorrow\" in MSR!")]), 
+                                e("p", [t._v("• [Sep 2024] Our work accepted by Nucleic Acid Research!")]), 
                               e("p", [t._v("• [Aug 2024] Our work accepted by Nature Computational Science!")]), 
                               e("p", [t._v("• [Aug 2024] Our one letter accepted by Nature Computational Science!")]), 
                               e("p", [t._v("• [May 2024] One article in Cell Genomics was annonated as a Featured Article!")]),
@@ -603,7 +604,12 @@
                                         }
                                       },
                                       [e("b-row", 
-                                      [e("b-col", {attrs: {cols: "3"}},
+                                      [
+                                        e("b-col", {attrs: {cols: "3"}},
+                                          [t._v("2024")]),  e("b-col", {attrs: {cols: "9"}},
+                                          [e("p", [t._v(" \"Stars of Tomorrow\" in Microsoft Research (Top 10% interns in MSR)")])]),
+
+                                        e("b-col", {attrs: {cols: "3"}},
                                         [t._v("2023")]),  e("b-col", {attrs: {cols: "9"}},
                                         [e("p", [t._v("National scholarship for PhD students in China (Top 0.2%)")])]),
 
