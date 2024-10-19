@@ -434,7 +434,29 @@
                                         }
                                       },
                                       [e("u", [t._v("BM2 Lab") ])]),  
-                                      t._v(". He obtained his Bachelor degree from Huazhong Agricultural University (HZAU) in 2020 with Outstanding Graduate Award, with major in Bioinformatics.")]), 
+                                      t._v(". He obtained his Bachelor degree from Huazhong Agricultural University (HZAU) in 2020 with Outstanding Graduate Award, with major in Bioinformatics. He also was a Research Intern in the AI/ML group at Microsoft Research Asia, mentored by  "),
+                                      e("a", {
+                                        // staticStyle: {
+                                        //   color: "black"
+                                        // },
+                                        attrs: {
+                                          href: "https://www.microsoft.com/en-us/research/people/caihuashan/",
+                                          target: "_blank"
+                                        }
+                                      },
+                                      [e("u", [t._v("Dr. Caihua Shan")])]), t._v(" and "),
+                                      e("a", {
+                                        // staticStyle: {
+                                        //   color: "black"
+                                        // },
+                                        attrs: {
+                                          href: "http://recmind.cn/",
+                                          target: "_blank"
+                                        }
+                                      },
+                                      [e("u", [t._v("Dr. Dongsheng Li")])]),t._v(". "),
+                                    ]), 
+
 																			e("p", [t._v("His main research interests are "), e("b", [t._v("Bioinformatics")]), t._v(", "), 
                                       e("b", [t._v("Computational Biology")]), t._v(", "), e("b", [t._v("Artificial Intelligence")]), t._v(" and "), e("b", [t._v("Machine Learning")]), t._v(".")]),
                                       e("p",[t._v("Specifically, his main research directions are:")]), 
