@@ -511,6 +511,7 @@
                                   }
                                 })
                                 })), 1) : t._e(), 
+                                e("p", [t._v("• [Otc 2024] Awarded the \"Academic Pioneer\" at Tongji University!")]), 
                                 e("p", [t._v("• [Otc 2024] Our one article in Nature Computational Science was highlighted!")]),
                                 e("p", [t._v("• [Otc 2024] Awarded the \"Stars of Tomorrow\" in MSR!")]), 
                                 e("p", [t._v("• [Sep 2024] Our work accepted by Nucleic Acid Research!")]), 
@@ -630,7 +631,15 @@
                                       [
                                         e("b-col", {attrs: {cols: "3"}},
                                           [t._v("2024")]),  e("b-col", {attrs: {cols: "9"}},
+                                          [e("p", [t._v("\"Academic Pioneer Award\" at Tongji University (Top 0.05%), ranked 1st")])]),
+
+                                        e("b-col", {attrs: {cols: "3"}},
+                                          [t._v("2024")]),  e("b-col", {attrs: {cols: "9"}},
                                           [e("p", [t._v(" \"Stars of Tomorrow\" in Microsoft Research (Top 10% interns in MSR)")])]),
+
+                                        e("b-col", {attrs: {cols: "3"}},
+                                          [t._v("2024")]),  e("b-col", {attrs: {cols: "9"}},
+                                          [e("p", [t._v("National scholarship for PhD students in China (Top 0.2%)")])]),
 
                                         e("b-col", {attrs: {cols: "3"}},
                                         [t._v("2023")]),  e("b-col", {attrs: {cols: "9"}},
@@ -646,7 +655,7 @@
 
                                         e("b-col", {attrs: {cols: "3"}}, 
                                         [t._v("2020")]),e("b-col", {attrs: {cols: "9"}},
-                                        [e("p", [t._v("The 16th 'Top Ten Students' of Huazhong Agricultural University (Top 0.1%), ranked first")])]),
+                                        [e("p", [t._v("The 16th 'Top Ten Students' of Huazhong Agricultural University (Top 0.1%), ranked 1st")])]),
 
                                         e("b-col", {attrs: {cols: "3"}}, 
                                         [t._v("2019")]),e("b-col", {attrs: {cols: "9"}},
