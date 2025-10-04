@@ -1,6 +1,11 @@
 {
     "data":{
         "2025":[
+            {
+                "title": "Benchmarking multi-slice integration and downstream applications in spatial transcriptomics data analysis",
+                "booktitle": "Genome Biology",
+                "authors": "Kejing Dong*, <b>Yicheng Gao*</b>, Qi Zou, Yan Cui, Chuangyi Han, Senlin Lin, Zhikang Wang, Chen Tang, Xiaojie Cheng, Fangliangzi Meng, Xiaohan Chen, Shuguang Wang, Xuan Jin, Jingya Yang, Chen Zhang, Guohui Chuai, Zhiyuan Yuan, Qi Liu"
+            },
 			{
                 "title": "Weakly-supervised peptide-TCR binding prediction facilitates neoantigen identification",
                 "booktitle": "Cell Systems",
