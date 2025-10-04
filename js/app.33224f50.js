@@ -195,7 +195,7 @@
                         },
                         attrs: {
                           target: "_blank",
-                          href: "CV_yichengGao_20240911.pdf"
+                          href: "CV_yichengGao_20251004.pdf"
                         }
                       },
                         [t._v("CV")])

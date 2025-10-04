@@ -203,7 +203,7 @@
                                 },
                                 attrs: {
                                   target: "_blank",
-                                  href: "CV_yichengGao_20250614.pdf"
+                                  href: "CV_yichengGao_20251004.pdf"
                                 }
                               },
                               [t._v("CV")])
@@ -456,7 +456,7 @@
                                         }
                                       },
                                       [e("u", [t._v("Dr. Dongsheng Li")])]),t._v(". "),
-                                      t._v(" He is going to be a Visiting Scholar of Technical University Munich (TUM) and Helmholtz Munich, supervised by  "),
+                                      t._v(" He is currently a Visiting Scholar of Helmholtz Munich, supervised by  "),
                                       e("a", {
                                         // staticStyle: {
                                         //   color: "black"
@@ -530,7 +530,10 @@
                                   }
                                 })
                                 })), 1) : t._e(), 
-                                e("p", [t._v("• [Jun 2025] Our work accepted by Nature Communications!")]), 
+                                e("p", [t._v("• [Sep 2025] Our work accepted by Genome Biology")]), 
+                                e("p", [t._v("• [Sep 2025] Our work accepted by Cell Systems")]), 
+                                e("p", [t._v("• [July 2025] Join Fabian Theis's lab as a visiting scholar")]), 
+                                e("p", [t._v("• [Jun 2025] Our work accepted by Nature Communications and highlighted by Nature Communications!")]), 
                                 e("p", [t._v("• [Jun 2025] Awarded the \"Potential Qingyuan Scholar\" of CAAI")]), 
                                 e("p", [t._v("• [May 2025] Get the support of Shanghai Interdisciplinary Innovation Foundation, 50K RMB")]), 
                                 e("p", [t._v("• [Jan 2025] Get the support of NSFC, 300K RMB")]), 
@@ -609,11 +612,98 @@
                                         }
                                       })
                                     })), 1)], 1)], 1)
-                          }))], 2)], 1), e("b-row", {
+                          }))], 2)], 1), 
+
+                    e("b-row", {
+                              attrs: {
+                                id: "otherpubs"
+                              }
+                            },
+                            [e("b-card", {
+                                staticStyle: {
+                                  width: "100%",
+                                  border: "0px",
+                                  padding: "1vw 0 0 0"
+                                },
+                                attrs: {
+                                  "no-body": ""
+                                }
+                              },
+                              [t.publications ? e("b-card-header", {
+                                  staticStyle: {
+                                    "font-size": "22px",
+                                    "text-align": "left",
+                                    "font-weight": "bold",
+                                    border: "0px",
+                                    background: "white"
+                                  }
+                                },
+                                [t._v("Other Publications")]) : t._e(), e("b-card-body", {
+                                  staticStyle: {
+                                    border: "0px",
+                                    padding: "5px 5px 5px 5vw",
+                                    "text-align": "left"
+                                  }
+                                },
+                                [e("b-list-group", {
+                                    staticStyle: {
+                                      border: "0px"
+                                    }
+                                  },
+                                  [e("b-list-group-item", {
+                                      staticStyle: {
+                                        border: "0px"
+                                      }
+                                    },
+                                    [e("b-row", 
+                                    [e("b-col", {attrs: {cols: "12"}},
+                                      [
+                                      e("div", {staticStyle: {"margin-bottom": "25px"}}, [
+                                        e("p", {staticStyle: {"font-weight": "bold", "margin-bottom": "5px"}}, 
+                                        [t._v("Benchmarking multi-slice integration and downstream applications in spatial transcriptomics data analysis")]
+                                      ),
+                                      e("p", {staticStyle: {"margin-bottom": "5px"}},
+                                        [t._v("Kejing Dong*, "), e("b", [t._v("Yicheng Gao*")]), t._v(", Qi Zou, Yan Cui, Chuangyi Han, Senlin Lin, Zhikang Wang, Chen Tang, Xiaojie Cheng, Fangliangzi Meng, Xiaohan Chen, Shuguang Wang, Xuan Jin, Jingya Yang, Chen Zhang, Guohui Chuai, Zhiyuan Yuan, Qi Liu")]
+                                      ),
+                                      e("p", {staticStyle: {"font-style": "italic", "margin-bottom": "0"}},
+                                        [t._v("Genome Biology")]
+                                      ),
+                                      ]),
+
+                                      e("div", {staticStyle: {"margin-bottom": "25px"}}, [
+                                        e("p", {staticStyle: {"font-weight": "bold", "margin-bottom": "5px"}}, 
+                                        [t._v("Weakly-supervised peptide-TCR binding prediction facilitates neoantigen identification")]
+                                      ),
+                                      e("p", {staticStyle: {"margin-bottom": "5px"}},
+                                        [t._v("Yuli Gao*, "), e("b", [t._v("Yicheng Gao*")]), t._v(", Siqi Wu*, Danlu Li, Chi Zhou, Fangliangzi Meng, Kejing Dong, Xueying Zhao, Ping Li, Aibin Zhang, Qi Liu")]
+                                      ),
+                                      e("p", {staticStyle: {"font-style": "italic", "margin-bottom": "0"}},
+                                        [t._v("Cell Systems")]
+                                      ),
+                                      ]),
+                                  
+                                      e("div", {staticStyle: {"margin-bottom": "25px"}}, [
+                                        e("p", {staticStyle: {"font-weight": "bold", "margin-bottom": "5px"}}, 
+                                        [t._v("PerturBase: a comprehensive database for single-cell perturbation data analysis and visualization")]
+                                      ),
+                                      e("p", {staticStyle: {"margin-bottom": "5px"}},
+                                        [t._v("Zhiting Wei*, Duanmiao Si*, Bin Duan*"),e("b", [t._v(", Yicheng Gao*, ")]), t._v("Qian Yu, Ling Guo, Qi Liu")]
+                                      ),
+                                      e("p", {staticStyle: {"font-style": "italic", "margin-bottom": "0"}},
+                                        [t._v("Nucleic Acids Research")]
+                                      ),
+                                      ]),
+
+                                    ],)],1)], 1)],1)], 1)], 1)],1),
+                          
+                          e("b-row", {
                         attrs: {
                           id: "awards"
                         }
                       },
+
+
+                      
                       [e("b-card", {
                             staticStyle: {
                               width: "100%",
@@ -652,6 +742,9 @@
                                       },
                                       [e("b-row", 
                                       [
+                                        e("b-col", {attrs: {cols: "3"}},
+                                          [t._v("2025")]),  e("b-col", {attrs: {cols: "9"}},
+                                          [e("p", [t._v("National scholarship for PhD students in China (Top 0.2%)")])]),
                                         e("b-col", {attrs: {cols: "3"}},
                                           [t._v("2025")]),  e("b-col", {attrs: {cols: "9"}},
                                           [e("p", [t._v("Chinese Association for Artificial Intelligence (CAAI) \"Potential Qingyuan Scholar\"")])]), 
@@ -728,7 +821,17 @@
                                           border: "0px"
                                         }
                                       },
-                                      [e("b-row", [e("b-col", {attrs: {cols: "3"}},[t._v("2023.12-2024.10")]), 
+                                      [e("b-row", [
+                                      e("b-col", {attrs: {cols: "3"}},[t._v("2025.08-2026.02")]), 
+                                      e("b-col", {attrs: {cols: "6"}},[e("p", {staticStyle: {margin: "0"}},
+                                        [t._v("Visiting Scholar")]), 
+                                        t._v("Mentored by "),
+                                        e("a",{attrs:{href: "https://scholar.google.com/citations?user=sqWpn2AAAAAJ&hl=en",
+                                        target: "_blank"}}, [e("u",[t._v("Prof. Fabian J. Theis")])]), 
+                                        e("p", [t._v("Helmholtz Munich, Munich, Germany")])]), 
+                                        e("b-col", {attrs: {cols: "3"}},[e("img",{attrs:{src:"./logos/helmholtz.svg",alt:"Logo", width:"150"}})]),
+                                        
+                                        e("b-col", {attrs: {cols: "3"}},[t._v("2023.12-2024.10")]), 
                                       e("b-col", {attrs: {cols: "6"}},[e("p", {staticStyle: {margin: "0"}},
                                         [t._v("Intern, AI/ML group")]), 
                                         
