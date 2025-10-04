@@ -666,7 +666,7 @@
                                         [t._v("Kejing Dong*, "), e("b", [t._v("Yicheng Gao*")]), t._v(", Qi Zou, Yan Cui, Chuangyi Han, Senlin Lin, Zhikang Wang, Chen Tang, Xiaojie Cheng, Fangliangzi Meng, Xiaohan Chen, Shuguang Wang, Xuan Jin, Jingya Yang, Chen Zhang, Guohui Chuai, Zhiyuan Yuan, Qi Liu")]
                                       ),
                                       e("p", {staticStyle: {"font-style": "italic", "margin-bottom": "0"}},
-                                        [t._v("Genome Biology")]
+                                        [t._v("Genome Biology, 2025")]
                                       ),
                                       ]),
 
@@ -678,7 +678,7 @@
                                         [t._v("Yuli Gao*, "), e("b", [t._v("Yicheng Gao*")]), t._v(", Siqi Wu*, Danlu Li, Chi Zhou, Fangliangzi Meng, Kejing Dong, Xueying Zhao, Ping Li, Aibin Zhang, Qi Liu")]
                                       ),
                                       e("p", {staticStyle: {"font-style": "italic", "margin-bottom": "0"}},
-                                        [t._v("Cell Systems")]
+                                        [t._v("Cell Systems, 2025")]
                                       ),
                                       ]),
                                   
@@ -690,7 +690,7 @@
                                         [t._v("Zhiting Wei*, Duanmiao Si*, Bin Duan*"),e("b", [t._v(", Yicheng Gao*, ")]), t._v("Qian Yu, Ling Guo, Qi Liu")]
                                       ),
                                       e("p", {staticStyle: {"font-style": "italic", "margin-bottom": "0"}},
-                                        [t._v("Nucleic Acids Research")]
+                                        [t._v("Nucleic Acids Research, 2025")]
                                       ),
                                       ]),
 
