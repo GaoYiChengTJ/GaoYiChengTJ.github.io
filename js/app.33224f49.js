@@ -723,7 +723,7 @@
                                   background: "white"
                                 }
                               },
-                              [t._v(" Awards and Honors ")]) : t._e(), e("b-card-body", {
+                              [t._v(" Awards and Grants ")]) : t._e(), e("b-card-body", {
                                 staticStyle: {
                                   border: "0px",
                                   padding: "5px 5px 5px 5vw",
