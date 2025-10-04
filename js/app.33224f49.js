@@ -412,7 +412,7 @@
                                       margin: "4vw 0 1vw 0"
                                     }
                                   },
-                                  [e("b", [t._v("Yicheng Gao")]), t._v(" (高溢骋) is currently a PhD candidate in Bioinformatics Department at Tongji University (TJU), supervised by "), 
+                                  [t._v("I am currently a PhD candidate in Bioinformatics Department at Tongji University (TJU), supervised by "), 
                                   e("a", {
                                         // staticStyle: {
                                         //   color: "black"
@@ -435,7 +435,18 @@
                                         }
                                       },
                                       [e("u", [t._v("BM2 Lab") ])]),  
-                                      t._v(". He also was a Research Intern in the AI/ML group at Microsoft Research Asia, mentored by  "),
+                                      t._v(". Now, I am also a Visiting Scholar of Helmholtz Munich, supervised by  "), 
+                                      e("a", {
+                                        // staticStyle: {
+                                        //   color: "black"
+                                        // },
+                                        attrs: {
+                                          href: "https://scholar.google.com/citations?user=sqWpn2AAAAAJ&hl=en",
+                                          target: "_blank"
+                                        }
+                                      },
+                                      [e("u", [t._v("Prof. Fabian J. Theis")])]),
+                                      t._v(". I was a Research Intern in the AI/ML group at Microsoft Research Asia, mentored by  "),
                                       e("a", {
                                         // staticStyle: {
                                         //   color: "black"
@@ -456,22 +467,11 @@
                                         }
                                       },
                                       [e("u", [t._v("Dr. Dongsheng Li")])]),t._v(". "),
-                                      t._v(" He is currently a Visiting Scholar of Helmholtz Munich, supervised by  "),
-                                      e("a", {
-                                        // staticStyle: {
-                                        //   color: "black"
-                                        // },
-                                        attrs: {
-                                          href: "https://scholar.google.com/citations?user=sqWpn2AAAAAJ&hl=en",
-                                          target: "_blank"
-                                        }
-                                      },
-                                      [e("u", [t._v("Prof. Fabian J. Theis")])]),t._v(". ")
                                     ]), 
 
-																			e("p", [t._v("His main research interests are "), e("b", [t._v("Bioinformatics")]), t._v(", "), 
+																			e("p", [t._v("My main research interests are "), e("b", [t._v("Bioinformatics")]), t._v(", "), 
                                       e("b", [t._v("Computational Biology")]), t._v(", "), e("b", [t._v("Artificial Intelligence")]), t._v(" and "), e("b", [t._v("Machine Learning")]), t._v(".")]),
-                                      e("p",[t._v("Specifically, his main research direction is "), e("b", [t._v("AI virtual cell construction")]), t._v(", including:")]), 
+                                      e("p",[t._v("Specifically, My main research direction is "), e("b", [t._v("AI virtual cell construction")]), t._v(", including:")]), 
                                       e("b",[t._v("1. Cell disentanglement and counterfactual generation")]),
                                       e("p",[t._v("")]),
                                       e("b",[t._v("2. Cell perturbation prediction")]),
@@ -480,7 +480,7 @@
                                       e("p",[t._v("")]),
                                       e("b",[t._v("4. Protein-protein interaction modeling")]), 
                                       e("p",[t._v("")]),
-                                      e("p",[t._v("Besides, he is also interested in "), e("b", [t._v("LLM application")]), t._v(", such as LLM reasoning and agent system.")]), 
+                                      e("p",[t._v("Besides, I am also interested in "), e("b", [t._v("bridging the gap between LLM and single-cell omics data")]), t._v(", such as using LLM reasoning capability to study omics data and building agent system for single-cell domain.")]), 
                                       e("b",{ style: "color: red" }, [t._v("Now, He is actively looking for a postdoctoral research position starting in 2026!")]), 
                                       e("p",[t._v("")]),
                                       e("p",[t._v("Feel Free to drop an email: gao.yicheng.98@gmail.com or 2011398@tongji.edu.cn")]), 
