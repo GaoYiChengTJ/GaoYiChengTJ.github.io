@@ -2,6 +2,11 @@
     "data":{
         "2025":[
             {
+                "title": "Benchmarking algorithms for generalizable single-cell perturbation response prediction",
+                "booktitle": "Nature Methods",
+                "authors": "Zhiting Wei*, Yiheng Wang*, <b>Yicheng Gao*</b>, Shuguang Wang*, Ping Li, Duanmiao Si, Yuli Gao, Siqi Wu, Danlu Li, Kejing Dong, Xingbo Yang, Chen Tang, Shaliu Fu, Xiaohan Chen, Wannian Li, Yuzhou You, Chen Zhang, Aibin Liang, Guohui Chuai, Qi Liu"
+            },
+            {
                 "title": "Benchmarking multi-slice integration and downstream applications in spatial transcriptomics data analysis",
                 "booktitle": "Genome Biology",
                 "authors": "Kejing Dong*, <b>Yicheng Gao*</b>, Qi Zou, Yan Cui, Chuangyi Han, Senlin Lin, Zhikang Wang, Chen Tang, Xiaojie Cheng, Fangliangzi Meng, Xiaohan Chen, Shuguang Wang, Xuan Jin, Jingya Yang, Chen Zhang, Guohui Chuai, Zhiyuan Yuan, Qi Liu"

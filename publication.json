@@ -2,6 +2,16 @@
     "data":{
         "2025":[
             {
+                "title": "Language may be all omics needs: Harmonizing multimodal data for omics understanding with CellHermes",
+                "booktitle": "Biorxiv",
+                "authors": "<b>Yicheng Gao</b>, Weixu Wang, Yuheng Zhao, Kejing Dong, Caihua Shan, Weizhong Zheng, Till Richter, Zekai Li, Siming Chen, Fabian J. Theis, Qi Liu",
+                "links":{
+                    "PDF": "./paper/biorxiv.pdf",
+					"Github": "https://github.com/theislab/CellHermes"
+                },
+                "image":"image/biorxiv.png"
+            },
+            {
                 "title": "Causal disentanglement for single-cell representations and controllable counterfactual generation",
                 "booktitle": "Nature Communications (<font color=\"red\">Research Highlight</font>)",
                 "authors": "<b>Yicheng Gao</b>, Kejing Dong, Caihua Shan, Dongsheng Li, Qi Liu",
