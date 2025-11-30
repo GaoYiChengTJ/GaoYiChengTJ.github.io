@@ -660,6 +660,18 @@
                                       [
                                       e("div", {staticStyle: {"margin-bottom": "25px"}}, [
                                         e("p", {staticStyle: {"font-weight": "bold", "margin-bottom": "5px"}}, 
+                                        [t._v("Benchmarking algorithms for generalizable single-cell perturbation response prediction")]
+                                      ),
+                                      e("p", {staticStyle: {"margin-bottom": "5px"}},
+                                        [t._v("Zhiting Wei*, Yiheng Wang*, "), e("b", [t._v("Yicheng Gao*")]), t._v(", Shuguang Wang*, Ping Li, Duanmiao Si, Yuli Gao, Siqi Wu, Danlu Li, Kejing Dong, Xingbo Yang, Chen Tang, Shaliu Fu, Xiaohan Chen, Wannian Li, Yuzhou You, Chen Zhang, Aibin Liang, Guohui Chuai, Qi Liu")]
+                                      ),
+                                      e("p", {staticStyle: {"font-style": "italic", "margin-bottom": "0"}},
+                                        [t._v("Nature Methods, 2025")]
+                                      ),
+                                      ]),
+
+                                      e("div", {staticStyle: {"margin-bottom": "25px"}}, [
+                                        e("p", {staticStyle: {"font-weight": "bold", "margin-bottom": "5px"}}, 
                                         [t._v("Benchmarking multi-slice integration and downstream applications in spatial transcriptomics data analysis")]
                                       ),
                                       e("p", {staticStyle: {"margin-bottom": "5px"}},
