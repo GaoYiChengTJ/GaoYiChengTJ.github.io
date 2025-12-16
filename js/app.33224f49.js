@@ -481,7 +481,7 @@
                                       e("b",[t._v("4. Protein-protein interaction modeling")]), 
                                       e("p",[t._v("")]),
                                       e("p",[t._v("Besides, I am also interested in "), e("b", [t._v("bridging the gap between LLM and single-cell omics data")]), t._v(", such as using LLM reasoning capability to study omics data and building agent system for single-cell domain.")]), 
-                                      e("b",{ style: "color: red" }, [t._v("Now, He is actively looking for a postdoctoral research position starting in 2026!")]), 
+                                      e("b",{ style: "color: red" }, [t._v("Now, He is actively looking for a faculty or postdoctoral research position starting in 2026!")]), 
                                       e("p",[t._v("")]),
                                       e("p",[t._v("Feel Free to drop an email: gao.yicheng.98@gmail.com or 2011398@tongji.edu.cn")]), 
                                     ])], 1)], 1), 
