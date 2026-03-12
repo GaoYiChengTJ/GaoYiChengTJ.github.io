@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-    <html lang=en>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yicheng Gao — AI for Life Sciences</title>
+    <meta name="description" content="Yicheng Gao's academic homepage. PhD candidate at Tongji University, researching AI virtual cell construction.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178672117-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -8,34 +15,907 @@
       gtag('js', new Date());
       gtag('config', 'UA-178672117-1');
     </script>
-    <meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport content="width=device-width,initial-scale=1">
-    <title>Yicheng Gao's Homepage</title>
-    <meta property=og:type content=website class=next-head><link href=/css/app.f1c964d4.css rel=preload as=style><link href=/css/chunk-vendors.6a7c8892.css rel=preload as=style><link href=/js/app.33224f49.js rel=preload as=script><link href=/js/chunk-vendors.14793ace.js rel=preload as=script><link href=/css/chunk-vendors.6a7c8892.css rel=stylesheet>
-    <link href=/css/app.f1c964d4.css rel=stylesheet>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== Reset & Base ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --color-bg: #fafaf9;
+            --color-surface: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-secondary: #555;
+            --color-text-muted: #888;
+            --color-accent: #2563eb;
+            --color-accent-light: #eff6ff;
+            --color-border: #e5e5e5;
+            --color-highlight: #dc2626;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --max-width: 920px;
+            --section-gap: 5rem;
+        }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a { color: var(--color-accent); text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.75; }
+
+        ::selection { background: var(--color-accent); color: #fff; }
+
+        /* ===== Navigation ===== */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(250,250,249,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        nav .nav-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+
+        nav .nav-name {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-text);
+            letter-spacing: -0.01em;
+        }
+
+        nav .nav-links { display: flex; gap: 2rem; align-items: center; }
+
+        nav .nav-links a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        nav .nav-links a:hover { color: var(--color-text); opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            background: none; border: none; cursor: pointer;
+            width: 24px; height: 24px; position: relative;
+        }
+        .nav-toggle span {
+            display: block; width: 20px; height: 1.5px;
+            background: var(--color-text); position: absolute; left: 2px;
+            transition: all 0.3s;
+        }
+        .nav-toggle span:nth-child(1) { top: 6px; }
+        .nav-toggle span:nth-child(2) { top: 12px; }
+        .nav-toggle span:nth-child(3) { top: 18px; }
+
+        /* ===== Main Content ===== */
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            padding-top: 100px;
+        }
+
+        section { margin-bottom: var(--section-gap); }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+            color: var(--color-text);
+        }
+
+        .section-divider {
+            width: 40px; height: 2px;
+            background: var(--color-text);
+            margin-bottom: 2rem;
+        }
+
+        /* ===== Hero / About ===== */
+        .hero {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: var(--section-gap);
+        }
+
+        .hero-photo {
+            width: 200px; height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            filter: grayscale(10%);
+        }
+
+        .hero-content h1 {
+            font-family: var(--font-serif);
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.25rem;
+            line-height: 1.2;
+        }
+
+        .hero-content h1 .chinese-name {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--color-text-muted);
+            margin-left: 0.5rem;
+            font-family: var(--font-sans);
+        }
+
+        .hero-tagline {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 1.25rem;
+            font-weight: 400;
+        }
+
+        .hero-links {
+            display: flex; gap: 1.25rem; flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-links a {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            font-size: 0.85rem; font-weight: 500;
+            color: var(--color-text-secondary);
+            padding: 0.4rem 0.85rem;
+            border: 1px solid var(--color-border);
+            border-radius: 100px;
+            transition: all 0.2s;
+        }
+        .hero-links a:hover {
+            border-color: var(--color-text);
+            color: var(--color-text);
+            opacity: 1;
+        }
+
+        .hero-links a svg { width: 14px; height: 14px; }
+
+        .hero-bio { font-size: 0.95rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .hero-bio p { margin-bottom: 0.75rem; }
+        .hero-bio strong { color: var(--color-text); font-weight: 600; }
+
+        .hiring-badge {
+            display: inline-block;
+            background: var(--color-highlight);
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.35rem 1rem;
+            border-radius: 100px;
+            margin-top: 0.75rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* ===== Research Directions ===== */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .research-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .research-card:hover {
+            border-color: #ccc;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        }
+
+        .research-card .card-number {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .research-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* ===== News ===== */
+        .news-list {
+            max-height: 320px;
+            overflow-y: auto;
+            padding-right: 1rem;
+        }
+
+        .news-list::-webkit-scrollbar { width: 3px; }
+        .news-list::-webkit-scrollbar-track { background: transparent; }
+        .news-list::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+
+        .news-item {
+            display: grid;
+            grid-template-columns: 90px 1fr;
+            gap: 1rem;
+            padding: 0.65rem 0;
+            border-bottom: 1px solid var(--color-border);
+            font-size: 0.9rem;
+        }
+
+        .news-item:last-child { border-bottom: none; }
+
+        .news-date {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            font-weight: 500;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .news-text { color: var(--color-text-secondary); }
+        .news-text .highlight { color: var(--color-highlight); font-weight: 600; }
+
+        /* ===== Publications ===== */
+        .pub-year-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text-muted);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .pub-year-label:first-child { margin-top: 0; }
+
+        .pub-item {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 1.5rem;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            align-items: start;
+        }
+
+        .pub-item:last-child { border-bottom: none; }
+
+        .pub-logo {
+            width: 80px; height: 80px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #f8f8f8;
+            padding: 8px;
+        }
+
+        .pub-info h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 0.35rem;
+        }
+
+        .pub-venue {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            font-style: italic;
+            margin-bottom: 0.3rem;
+        }
+
+        .pub-venue .badge {
+            font-style: normal;
+            color: var(--color-highlight);
+            font-weight: 600;
+            font-size: 0.78rem;
+        }
+
+        .pub-authors {
+            font-size: 0.82rem;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-authors .me { font-weight: 600; color: var(--color-text); }
+
+        .pub-links { display: flex; gap: 0.75rem; }
+
+        .pub-links a {
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 0.25rem 0.7rem;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            color: var(--color-text-secondary);
+            transition: all 0.2s;
+        }
+        .pub-links a:hover {
+            background: var(--color-text);
+            color: #fff;
+            border-color: var(--color-text);
+            opacity: 1;
+        }
+
+        /* Other publications (no image) */
+        .pub-item.compact {
+            grid-template-columns: 1fr;
+            padding: 0.85rem 0;
+        }
+        .pub-item.compact h3 { font-size: 0.9rem; }
+
+        .pub-section-header {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+        }
+
+        .other-pubs-toggle {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            font-size: 0.85rem; font-weight: 500;
+            color: var(--color-accent);
+            cursor: pointer;
+            margin-top: 1rem;
+            background: none; border: none;
+            font-family: var(--font-sans);
+        }
+        .other-pubs-toggle:hover { opacity: 0.7; }
+
+        .other-pubs-list { display: none; }
+        .other-pubs-list.show { display: block; }
+
+        /* ===== Awards ===== */
+        .awards-list { list-style: none; }
+
+        .award-year-group { margin-bottom: 1.75rem; }
+
+        .award-year {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text-muted);
+            margin-bottom: 0.6rem;
+        }
+
+        .award-item {
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .award-item::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0.85rem;
+            width: 4px; height: 4px;
+            background: var(--color-text-muted);
+            border-radius: 50%;
+        }
+
+        /* ===== Experience ===== */
+        .exp-list { display: flex; flex-direction: column; gap: 1.75rem; }
+
+        .exp-item {
+            display: grid;
+            grid-template-columns: 56px 1fr;
+            gap: 1.25rem;
+            align-items: start;
+        }
+
+        .exp-logo {
+            width: 56px; height: 56px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: #f8f8f8;
+            padding: 6px;
+        }
+
+        .exp-info h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.15rem;
+        }
+
+        .exp-info .exp-org {
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.15rem;
+        }
+
+        .exp-info .exp-date {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        .exp-info .exp-detail {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-top: 0.3rem;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            border-top: 1px solid var(--color-border);
+            margin-top: 2rem;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            :root { --section-gap: 3.5rem; }
+
+            .nav-toggle { display: block; }
+            nav .nav-links {
+                display: none;
+                position: absolute; top: 60px; left: 0; right: 0;
+                background: rgba(250,250,249,0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 1rem 2rem 1.5rem;
+                gap: 0.75rem;
+                border-bottom: 1px solid var(--color-border);
+            }
+            nav .nav-links.open { display: flex; }
+
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1.5rem;
+            }
+            .hero-photo { margin: 0 auto; width: 160px; height: 160px; }
+            .hero-links { justify-content: center; }
+            .hero-content h1 { font-size: 1.8rem; }
+            .hero-content h1 .chinese-name { display: block; margin-left: 0; margin-top: 0.25rem; }
+
+            .research-grid { grid-template-columns: 1fr; }
+
+            .pub-item { grid-template-columns: 1fr; }
+            .pub-logo { display: none; }
+
+            .exp-item { grid-template-columns: 44px 1fr; }
+            .exp-logo { width: 44px; height: 44px; }
+        }
+
+        /* ===== Animations ===== */
+        .fade-in {
+            opacity: 0; transform: translateY(16px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
 </head>
-
-<style>@media (min-width: 1079px){
-          #footer {
-            width: 100%;
-          }
-    }
-    @media (max-width: 1079px){
-      #footer {
-        width: 100%;
-      }
-    }
-</style>
-
 <body>
-    <noscript>
-        <strong>About me. Yicheng Gao (高溢骋) is currently a PhD candidate in Bioinformatics Department at Tongji University (TJU), supervised by Prof. Qi Liu in BM2 Lab.</strong>
-    </noscript>
-    <div id=app></div>
-    <footer id=footer style="background-color: #343a40; font-family: Avenir, Helvetica, Arial, sans-serif; color: white;  margin-left: auto; margin-right: auto">
-        <p style="margin-bottom:0; padding:0.5vw 3vw 0.5vw 3vw; font-size: 12px; text-align: center;">Last updated 2025.12</p>
-    </footer>
-    <script src=/js/chunk-vendors.14793ace.js></script>
-    <script src=/js/app.33224f49.js></script>
+
+<!-- Navigation -->
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="nav-name">Yicheng Gao</a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#awards">Awards</a>
+            <a href="#experience">Experience</a>
+            <a href="CV_yichengGao.pdf" target="_blank">CV</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <!-- Hero / About -->
+    <section class="hero fade-in" id="about">
+        <div>
+            <img src="lifephoto.jpg" alt="Yicheng Gao" class="hero-photo">
+        </div>
+        <div class="hero-content">
+            <h1>Yicheng Gao <span class="chinese-name">高溢骋</span></h1>
+            <p class="hero-tagline">PhD Candidate &middot; Tongji University &middot; Visiting Scholar at Helmholtz Munich</p>
+            <div class="hero-links">
+                <a href="mailto:gao.yicheng.98@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Email
+                </a>
+                <a href="https://scholar.google.com/citations?hl=en&authuser=2&user=MmLFH_MAAAAJ" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+                    Google Scholar
+                </a>
+                <a href="Research Statement.pdf" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                    Research Statement
+                </a>
+            </div>
+            <div class="hero-bio">
+                <p>
+                    I am a PhD candidate in the Bioinformatics Department at Tongji University, supervised by
+                    <a href="http://life.tongji.edu.cn/03/28/c12618a131880/page.htm" target="_blank">Prof. Qi Liu</a> in
+                    <a href="https://ai4omics.github.io/" target="_blank">BM2 Lab</a>.
+                    Currently, I am a Visiting Scholar at Helmholtz Munich, mentored by
+                    <a href="https://scholar.google.com/citations?user=sqWpn2AAAAAJ&hl=en" target="_blank">Prof. Fabian J. Theis</a>.
+                    Previously, I was a Research Intern in the AI/ML group at Microsoft Research Asia, mentored by
+                    <a href="https://www.microsoft.com/en-us/research/people/caihuashan/" target="_blank">Dr. Caihua Shan</a> and
+                    <a href="http://recmind.cn/" target="_blank">Dr. Dongsheng Li</a>.
+                </p>
+                <p>
+                    My research focuses on <strong>AI virtual cell construction</strong>, spanning cell disentanglement, perturbation prediction, multi-modal representation, and protein-protein interaction modeling. I am also interested in <strong>bridging LLMs and single-cell omics</strong> — using LLM reasoning to study omics data and building agent systems for single-cell biology.
+                </p>
+                <span class="hiring-badge">Seeking faculty / postdoc positions starting 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Directions -->
+    <section id="research" class="fade-in">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Research Directions</h2>
+        <div class="research-grid">
+            <div class="research-card">
+                <div class="card-number">01</div>
+                <h3>Cell Disentanglement &amp; Counterfactual Generation</h3>
+            </div>
+            <div class="research-card">
+                <div class="card-number">02</div>
+                <h3>Cell Perturbation Prediction</h3>
+            </div>
+            <div class="research-card">
+                <div class="card-number">03</div>
+                <h3>Multi-modal Representation</h3>
+            </div>
+            <div class="research-card">
+                <div class="card-number">04</div>
+                <h3>Protein-Protein Interaction Modeling</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="fade-in">
+        <div class="section-divider"></div>
+        <h2 class="section-title">News</h2>
+        <div class="news-list">
+            <div class="news-item"><span class="news-date">Sep 2025</span><span class="news-text">Our work accepted by <strong>Genome Biology</strong></span></div>
+            <div class="news-item"><span class="news-date">Sep 2025</span><span class="news-text">Our work accepted by <strong>Cell Systems</strong></span></div>
+            <div class="news-item"><span class="news-date">Jul 2025</span><span class="news-text">Joined <strong>Fabian Theis's lab</strong> at Helmholtz Munich as a visiting scholar</span></div>
+            <div class="news-item"><span class="news-date">Jun 2025</span><span class="news-text">Our work accepted by <strong>Nature Communications</strong> and <span class="highlight">highlighted</span>!</span></div>
+            <div class="news-item"><span class="news-date">Jun 2025</span><span class="news-text">Awarded the <span class="highlight">"Potential Qingyuan Scholar"</span> of CAAI</span></div>
+            <div class="news-item"><span class="news-date">May 2025</span><span class="news-text">Supported by Shanghai Interdisciplinary Innovation Foundation, 50K RMB</span></div>
+            <div class="news-item"><span class="news-date">Jan 2025</span><span class="news-text">Supported by NSFC, 300K RMB</span></div>
+            <div class="news-item"><span class="news-date">Oct 2024</span><span class="news-text">Awarded <span class="highlight">"Academic Pioneer"</span> at Tongji University (Top 0.05%, ranked 1st)</span></div>
+            <div class="news-item"><span class="news-date">Oct 2024</span><span class="news-text">Our article in <strong>Nature Computational Science</strong> was <span class="highlight">highlighted</span>!</span></div>
+            <div class="news-item"><span class="news-date">Oct 2024</span><span class="news-text">Awarded <span class="highlight">"Stars of Tomorrow"</span> at Microsoft Research</span></div>
+            <div class="news-item"><span class="news-date">Sep 2024</span><span class="news-text">Our work accepted by <strong>Nucleic Acids Research</strong></span></div>
+            <div class="news-item"><span class="news-date">Aug 2024</span><span class="news-text">Our work accepted by <strong>Nature Computational Science</strong></span></div>
+            <div class="news-item"><span class="news-date">Aug 2024</span><span class="news-text">One letter accepted by <strong>Nature Computational Science</strong></span></div>
+            <div class="news-item"><span class="news-date">May 2024</span><span class="news-text">Article in <strong>Cell Genomics</strong> annotated as <span class="highlight">Featured Article</span></span></div>
+            <div class="news-item"><span class="news-date">Apr 2024</span><span class="news-text">Our work accepted by <strong>Cell Genomics</strong></span></div>
+            <div class="news-item"><span class="news-date">Jan 2024</span><span class="news-text">Our work in <strong>Nature Machine Intelligence</strong> selected as ESI highly cited</span></div>
+            <div class="news-item"><span class="news-date">Dec 2023</span><span class="news-text">Joined <strong>Microsoft Research Asia</strong> as an intern</span></div>
+            <div class="news-item"><span class="news-date">Sep 2023</span><span class="news-text">One letter accepted by <strong>Nature Machine Intelligence</strong></span></div>
+            <div class="news-item"><span class="news-date">Mar 2023</span><span class="news-text">Article in <strong>Nature Machine Intelligence</strong> was <span class="highlight">highlighted</span>!</span></div>
+            <div class="news-item"><span class="news-date">Jan 2023</span><span class="news-text">Our article accepted by <strong>Nature Machine Intelligence</strong></span></div>
+            <div class="news-item"><span class="news-date">Sep 2020</span><span class="news-text">Joined BM2 Lab at Tongji University</span></div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="fade-in">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Selected Publications</h2>
+
+        <!-- 2025 -->
+        <div class="pub-year-label">2025</div>
+
+        <div class="pub-item">
+            <img src="image/biorxiv.png" alt="bioRxiv" class="pub-logo">
+            <div class="pub-info">
+                <h3>Language may be all omics needs: Harmonizing multimodal data for omics understanding with CellHermes</h3>
+                <div class="pub-venue">bioRxiv</div>
+                <div class="pub-authors"><span class="me">Yicheng Gao</span>, Weixu Wang, Yuheng Zhao, Kejing Dong, Caihua Shan, Weizhong Zheng, Till Richter, Zekai Li, Siming Chen, Fabian J. Theis, Qi Liu</div>
+                <div class="pub-links">
+                    <a href="./paper/biorxiv.pdf" target="_blank">PDF</a>
+                    <a href="https://github.com/theislab/CellHermes" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <img src="image/NC.png" alt="Nature Communications" class="pub-logo">
+            <div class="pub-info">
+                <h3>Causal disentanglement for single-cell representations and controllable counterfactual generation</h3>
+                <div class="pub-venue">Nature Communications <span class="badge">Research Highlight</span></div>
+                <div class="pub-authors"><span class="me">Yicheng Gao*</span>, Kejing Dong*, Caihua Shan, Dongsheng Li, Qi Liu</div>
+                <div class="pub-links">
+                    <a href="./paper/NC.pdf" target="_blank">PDF</a>
+                    <a href="https://github.com/bm2-lab/CausCell" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="pub-year-label">2024</div>
+
+        <div class="pub-item">
+            <img src="image/NCS.png" alt="Nature Computational Science" class="pub-logo">
+            <div class="pub-info">
+                <h3>Toward subtask decomposition-based learning and benchmarking for genetic perturbation outcome prediction and beyond</h3>
+                <div class="pub-venue">Nature Computational Science <span class="badge">Research Highlight</span></div>
+                <div class="pub-authors"><span class="me">Yicheng Gao*</span>, Zhiting Wei*, Kejing Dong*, Ke Chen*, Jingya Yang, Guohui Chuai, Qi Liu</div>
+                <div class="pub-links">
+                    <a href="./paper/NCS.pdf" target="_blank">PDF</a>
+                    <a href="https://github.com/bm2-lab/STAMP" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <img src="image/CG.png" alt="Cell Genomics" class="pub-logo">
+            <div class="pub-info">
+                <h3>Unified cross-modality integration and analysis of T cell receptors and T cell transcriptomes by low-resource-aware representation learning</h3>
+                <div class="pub-venue">Cell Genomics <span class="badge">Featured Article</span></div>
+                <div class="pub-authors"><span class="me">Yicheng Gao*</span>, Kejing Dong*, Yuli Gao, Xuan Jin, Jingya Yang, Gang Yan, Qi Liu</div>
+                <div class="pub-links">
+                    <a href="./paper/CG.pdf" target="_blank">PDF</a>
+                    <a href="https://github.com/bm2-lab/UniTCR" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="pub-year-label">2023</div>
+
+        <div class="pub-item">
+            <img src="image/NMI.png" alt="Nature Machine Intelligence" class="pub-logo">
+            <div class="pub-info">
+                <h3>Pan-Peptide Meta Learning for T-cell receptor–antigen binding recognition</h3>
+                <div class="pub-venue">Nature Machine Intelligence <span class="badge">Research Highlight &middot; ESI Highly Cited</span></div>
+                <div class="pub-authors"><span class="me">Yicheng Gao*</span>, Yuli Gao*, Yuxiao Fan, Chengyu Zhu, Zhiting Wei, Chi Zhou, Guohui Chuai, Qinchang Chen, He Zhang, Qi Liu</div>
+                <div class="pub-links">
+                    <a href="./paper/NMI.pdf" target="_blank">PDF</a>
+                    <a href="https://github.com/bm2-lab/PanPep" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Publications -->
+        <div style="margin-top: 2.5rem;">
+            <button class="other-pubs-toggle" onclick="toggleOtherPubs()">
+                <span id="toggle-icon">&#9654;</span>&nbsp; Other Publications
+            </button>
+            <div class="other-pubs-list" id="other-pubs">
+
+                <div class="pub-year-label">2025</div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>Benchmarking algorithms for generalizable single-cell perturbation response prediction</h3>
+                        <div class="pub-venue">Nature Methods</div>
+                        <div class="pub-authors">Zhiting Wei*, Yiheng Wang*, <span class="me">Yicheng Gao*</span>, Shuguang Wang*, Ping Li, Duanmiao Si, Yuli Gao, Siqi Wu, Danlu Li, Kejing Dong, Xingbo Yang, Chen Tang, Shaliu Fu, Xiaohan Chen, Wannian Li, Yuzhou You, Chen Zhang, Aibin Liang, Guohui Chuai, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>Benchmarking multi-slice integration and downstream applications in spatial transcriptomics data analysis</h3>
+                        <div class="pub-venue">Genome Biology</div>
+                        <div class="pub-authors">Kejing Dong*, <span class="me">Yicheng Gao*</span>, Qi Zou, Yan Cui, Chuangyi Han, Senlin Lin, Zhikang Wang, Chen Tang, Xiaojie Cheng, Fangliangzi Meng, Xiaohan Chen, Shuguang Wang, Xuan Jin, Jingya Yang, Chen Zhang, Guohui Chuai, Zhiyuan Yuan, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>Weakly-supervised peptide-TCR binding prediction facilitates neoantigen identification</h3>
+                        <div class="pub-venue">Cell Systems</div>
+                        <div class="pub-authors">Yuli Gao*, <span class="me">Yicheng Gao*</span>, Siqi Wu*, Danlu Li, Chi Zhou, Fangliangzi Meng, Kejing Dong, Xueying Zhao, Ping Li, Aibin Zhang, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-year-label">2024</div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>PerturBase: a comprehensive database for single-cell perturbation data analysis and visualization</h3>
+                        <div class="pub-venue">Nucleic Acids Research</div>
+                        <div class="pub-authors">Zhiting Wei*, Duanmiao Si*, Bin Duan*, <span class="me">Yicheng Gao*</span>, Qian Yu, Ling Guo, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>Delineating the cell types with transcriptional kinetics</h3>
+                        <div class="pub-venue">Nature Computational Science</div>
+                        <div class="pub-authors"><span class="me">Yicheng Gao</span>, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>Foundation models in molecular biology</h3>
+                        <div class="pub-venue">Biophysics Reports</div>
+                        <div class="pub-authors">Yunda Si, Jiawei Zou, <span class="me">Yicheng Gao</span>, Guohui Chuai, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-year-label">2023</div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>Reply to: The pitfalls of negative data bias for the T-cell epitope specificity challenge</h3>
+                        <div class="pub-venue">Nature Machine Intelligence</div>
+                        <div class="pub-authors"><span class="me">Yicheng Gao*</span>, Yuli Gao*, Kejing Dong, Siqi Wu, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>Privacy-preserving integration of multiple institutional data for single-cell type identification with scPrivacy</h3>
+                        <div class="pub-venue">Science China Life Sciences</div>
+                        <div class="pub-authors">Shaoqi Chen, Bin Duan, Chenyu Zhu, Chen Tang, Shuguang Wang, <span class="me">Yicheng Gao</span>, Shaliu Fu, Lixin Fan, Qiang Yang, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-year-label">2021</div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>Integrating multiple references for single-cell assignment</h3>
+                        <div class="pub-venue">Nucleic Acids Research</div>
+                        <div class="pub-authors">Bin Duan, Shaoqi Chen, Xiaohan Chen, Chenyu Zhu, Chen Tang, Shuguang Wang, <span class="me">Yicheng Gao</span>, Shaliu Fu, Qi Liu</div>
+                    </div>
+                </div>
+
+                <div class="pub-year-label">2019</div>
+
+                <div class="pub-item compact">
+                    <div class="pub-info">
+                        <h3>An ensemble strategy to predict prognosis in ovarian cancer based on gene modules</h3>
+                        <div class="pub-venue">Frontiers in Genetics</div>
+                        <div class="pub-authors"><span class="me">Yicheng Gao</span>, Xionghui Zhou, Wen Zhang</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="fade-in">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Awards &amp; Grants</h2>
+
+        <div class="award-year-group">
+            <div class="award-year">2025</div>
+            <div class="award-item">National Scholarship for PhD Students (Top 0.2%)</div>
+            <div class="award-item">CAAI "Potential Qingyuan Scholar"</div>
+            <div class="award-item">Shanghai Interdisciplinary Innovation Foundation — 50K RMB</div>
+            <div class="award-item">National Natural Science Foundation of China (NSFC) — 300K RMB</div>
+        </div>
+
+        <div class="award-year-group">
+            <div class="award-year">2024</div>
+            <div class="award-item">"Academic Pioneer Award" at Tongji University (Top 0.05%, ranked 1st)</div>
+            <div class="award-item">"Stars of Tomorrow" at Microsoft Research (Top 10% interns)</div>
+            <div class="award-item">National Scholarship for PhD Students (Top 0.2%)</div>
+        </div>
+
+        <div class="award-year-group">
+            <div class="award-year">2023</div>
+            <div class="award-item">National Scholarship for PhD Students (Top 0.2%)</div>
+        </div>
+
+        <div class="award-year-group">
+            <div class="award-year">2020</div>
+            <div class="award-item">Tongji University Scholarship for Outstanding PhD Freshman (Top 5%)</div>
+        </div>
+
+        <div class="award-year-group">
+            <div class="award-year">2019</div>
+            <div class="award-item">9th MathorCup University Mathematical Modeling Challenge — First Prize</div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="fade-in">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Experience</h2>
+
+        <div class="exp-list">
+            <div class="exp-item">
+                <img src="logos/helmholtz.svg" alt="Helmholtz Munich" class="exp-logo">
+                <div class="exp-info">
+                    <h3>Visiting Scholar</h3>
+                    <div class="exp-org">Helmholtz Munich — Theis Lab</div>
+                    <div class="exp-date">Aug 2025 – Feb 2026</div>
+                    <div class="exp-detail">Mentored by Prof. Fabian J. Theis</div>
+                </div>
+            </div>
+            <div class="exp-item">
+                <img src="logos/Microsoft.png" alt="Microsoft" class="exp-logo">
+                <div class="exp-info">
+                    <h3>Research Intern — AI/ML Group</h3>
+                    <div class="exp-org">Microsoft Research Asia</div>
+                    <div class="exp-date">Dec 2023 – Oct 2024</div>
+                    <div class="exp-detail">Mentored by Dr. Caihua Shan and Dr. Dongsheng Li</div>
+                </div>
+            </div>
+            <div class="exp-item">
+                <img src="logos/BGI.jpg" alt="BGI" class="exp-logo">
+                <div class="exp-info">
+                    <h3>Algorithm Engineer Intern</h3>
+                    <div class="exp-org">BGI Genomics</div>
+                    <div class="exp-date">Summer 2019 &amp; 2020</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Yicheng Gao &middot; Last updated Dec 2025</p>
+</footer>
+
+<script>
+    // Toggle other publications
+    function toggleOtherPubs() {
+        const el = document.getElementById('other-pubs');
+        const icon = document.getElementById('toggle-icon');
+        el.classList.toggle('show');
+        icon.textContent = el.classList.contains('show') ? '\u25BC' : '\u25B6';
+    }
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.remove('open');
+        });
+    });
+</script>
+
 </body>
 </html>
