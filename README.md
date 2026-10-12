@@ -1,7 +1,13 @@
-Hi, 
+# Yicheng Gao — Academic Homepage
 
-I am Yicheng Gao (高溢骋). Currently, I am a PhD candidate at Tongji University, supervised by Prof. Qi Liu in BM2 lab.  
+The root directory contains the published static website for GitHub Pages.
+Editable React / Vite source is in `site-source/`.
 
-[Here](https://gaoyichengtj.github.io/) is my personal website (or homepage).
+## Update the website
 
-Thanks.
+From `site-source/`, run `npm ci` and `npm run build`.
+Copy `dist/index.html`, `dist/assets/`, and `dist/portrait.jpg` to the repository root.
+Copy new referenced files from `dist/paper/` to the root `paper/` directory if needed.
+Keep `.nojekyll` and the Google verification file in the repository root.
+
+The original local development folder is `D:\KimiData\kimi\workspace\gaoyicheng-academic`.
